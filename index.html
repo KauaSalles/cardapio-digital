@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital - Hamburgueria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hamburgueria do Chef</h1>
+        <button class="cart-button" onclick="toggleCart()">Carrinho (<span id="cart-count">0</span>)</button> 
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Escolha seu Lanche</h2>
+            <div class="menu-container">
+               
+                <div class="menu-item">
+                    <img src="https://burgerx.com.br/assets/img/galeria/burgers/x-burger.jpg" alt="Hamburguer">
+                    <h3>X-Burger </h3>
+                    <p>R$ 20,00</p>
+                    <button onclick="addToCart('X-Burger', 20)">Adicionar ao Carrinho</button>
+                </div>
+                
+            </div>
+
+            <h2>Escolha sua Bebida</h2>
+            <div class="menu-container">
+             
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa3jqzI3p166of8J67IqQGiB7TK11Lch0mig&s" alt="Bebida">
+                    <h3>Refrigerante 350ml</h3>
+                    <p>R$ 5,00</p>
+                    <button onclick="addToCart('Refrigerante 350ml', 5)">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cart" class="hidden">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: R$ 0,00</p>
+            <button class="checkout-button" onclick="proceedToPayment()">Finalizar Compra</button>
+        </section>
+
+        <section id="payment" class="hidden">
+            <h2>Pagamento</h2>
+            <p>Total a pagar: R$ <span id="payment-total">0,00</span></p>
+            <label for="payment-method">Forma de pagamento:</label>
+            <select id="payment-method">
+                <option value="credit">Cartão de Crédito</option>
+                <option value="debit">Cartão de Débito</option>
+                <option value="pix">PIX</option>
+            </select>
+            <button class="pay-button" onclick="makePayment()">Pagar Agora</button>
+        </section>
+    </main>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

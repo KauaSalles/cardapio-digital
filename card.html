@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - Hamburgueria</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <header>
+    <h1>Hamburgueria Salles</h1>
+    <button id="cartButton">Carrinho (<span id="cartCount">0</span>)</button>
+  </header>
+  
+  <section id="menu">
+    <h2>Lanches</h2>
+    <div class="menu-item" data-name="Cheeseburger" data-price="18.00">
+      <img src="https://burgerx.com.br/assets/img/galeria/burgers/x-burger.jpg" alt="Cheeseburger">
+      <h3>X-Burger</h3>
+      <p>R$ 18,00</p>
+      <button class="add-to-cart">Adicionar ao carrinho</button>
+    </div>
+    <div class="menu-item" data-name="Bacon Burger" data-price="22.00">
+      <img src="https://embutidosbonatti.ind.br/temp/BIN_57_V9Fb0BwK.jpg" alt="Bacon Burger">
+      <h3>X-Bacon</h3>
+      <p>R$ 22,00</p>
+      <button class="add-to-cart">Adicionar ao carrinho</button>
+    </div>
+    
+    <h2>Refrigerantes</h2>
+    <div class="menu-item" data-name="Coca-Cola" data-price="5.00">
+      <img src="https://storage.googleapis.com/domain-images/0c38f198-2db6-46b9-a240-c94df814c742/products/gallery_05af6053-f2ee-42a1-b4d2-6ab32ae0f6fd.jpg" alt="Coca-Cola">
+      <h3>Refrigerante 350ml</h3>
+      <p>R$ 5,00</p>
+      <button class="add-to-cart">Adicionar ao carrinho</button>
+    </div>
+    <div class="menu-item" data-name="Fanta Laranja" data-price="5.00">
+      <img src="https://io.convertiez.com.br/m/farmaponte/shop/products/images/22004/medium/agua-mineral-crystal-sem-gas-garrafa-1-unidade-com-500ml_17652.webp" alt="Fanta Laranja">
+      <h3>Água</h3>
+      <p>R$ 5,00</p>
+      <button class="add-to-cart">Adicionar ao carrinho</button>
+    </div>
+  </section>
+
+  <div id="cartModal" class="hidden">
+    <h2>Carrinho</h2>
+    <ul id="cartItems"></ul>
+    <button id="checkoutButton">Finalizar Compra</button>
+    <button id="closeCart">Fechar</button>
+  </div>
+
+  <div id="checkoutPage" class="hidden">
+    <h2>Pagamento</h2>
+    <ul id="checkoutItems"></ul>
+    <label for="paymentMethod">Método de Pagamento:</label>
+    <select id="paymentMethod">
+      <option value="credit">Cartão de Crédito</option>
+      <option value="debit">Cartão de Débito</option>
+      <option value="pix">PIX</option>
+    </select>
+    <button id="confirmPayment">Confirmar Pagamento</button>
+  </div>
+
+  <div id="purchaseAnimation" class="hidden">
+    <h2>Compra Finalizada!</h2>
+    <p>Obrigado pela compra!</p>
+  </div>
+
+  <footer class="footer"><p>
+    © 2024 Hamburgueria Salles. Todos os direitos reservados.
+  </p></footer>
+
+ <script
+    id="hubchat-script" 
+    src="https://script.hubchat.com.br/webchat.js?token=2VHdQRzkVy6j4h4w&version=v1"
+    data-hubchat-btn-text="Vamos conversar?" data-hubchat-btn-color="#f30505ff"
+    data-hubchat-btn-text-color="#ffffffff" data-hubchat-btn-effect="true">
+</script>
+  <script src="card.js"></script>
+
+</body>
+</html>

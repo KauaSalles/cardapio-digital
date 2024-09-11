@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url(https://media.istockphoto.com/id/1270450362/pt/vetorial/editable-post-template-social-media-banners-for-digital-marketing-promotion-brand-fashion.jpg?s=612x612&w=0&k=20&c=roVV_lehDSzyKtTLrPKy8Qjkkbs3EIURBXnPAH5Jsqs=);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    color: #0056b3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.col-md-4 {
+    width: 100%;
+    max-width: 33.3333%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.card {
+    padding: 1.5rem;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bg-primary {
+    background-color: #007bff;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+}
+
+.bg-success {
+    background-color: #28a745;
+}
+
+.card h5 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

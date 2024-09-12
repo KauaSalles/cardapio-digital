@@ -1,17 +1,27 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    background-image: url(https://img.freepik.com/fotos-gratis/conceito-de-madeira-da-textura-do-papel-de-parede-do-fundo-do-material_53876-42925.jpg);
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-colorido-realista-da-galaxia_23-2148965681.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #f10000;
+    background:linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(190,26,26,1) 49%, rgba(34,26,190,1) 79%);
     color: white;
     padding: 7px;
     text-align: center;
+  }
+
+  .insta {
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+    border: 2px;
+    font-size: 10px;
+    font-weight: 10px;
+
   }
 
   .footer {
@@ -33,13 +43,14 @@ body {
   
   .menu-item {
     display: inline-block;
-    background-color: rgb(255, 0, 0);
-    border: 1px solid #ddd;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(190,26,26,1) 49%, rgba(34,26,190,1) 79%);
+    border: 1px solid #000000;
     padding: 20px;
     width: 200px;
     text-align: center;
     margin: 10px;
   }
+  
   
   .menu-item img {
     width: 100%;

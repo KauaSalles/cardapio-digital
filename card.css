@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    background-image: url(https://img.freepik.com/vetores-gratis/fundo-colorido-realista-da-galaxia_23-2148965681.jpg);
-    background-size: cover;
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/t1/5185637-shawarma-cozinhando-e-ingredientes-para-kebab-vetor.jpg);
+    background-size: auto;
     margin: 0;
     padding: 0;
   }
@@ -33,6 +33,16 @@ body {
     position: relative;
     color: #ffffff;
     opacity: 100%;
+  }
+  
+  .canva {
+    position: absolute;
+    top: 10;
+    left: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+
+   
   }
 
   .input-box {
@@ -75,7 +85,8 @@ body {
   
   .menu-item {
     display: inline-block;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(190,26,26,1) 49%, rgba(34,26,190,1) 79%);
+    background:linear-gradient(90deg, rgb(13, 13, 14) 17%, rgb(0, 0, 0) 49%, rgba(13,13,14,1) 79%);
+    color: white;
     border: 1px solid #000000;
     padding: 20px;
     width: 200px;
@@ -90,25 +101,49 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    opacity: 100%;
   }
   
   button {
     padding: 10px 20px;
     background-color: #28a745;
     color: white;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
   }
-  
+
+  .input-box {
+    background: rgb(32, 32, 32);
+    font-size: 30px;
+  }
+
+
   #cartModal, #checkoutPage, #purchaseAnimation {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(255, 0, 0);
+    background:linear-gradient(90deg, rgb(13, 13, 14) 17%, rgb(0, 0, 0) 49%, rgba(13,13,14,1) 79%);
     border: 5px solid #000000;
+    border-radius: 20px;
     padding: 20px;
     z-index: 10;
+  }
+.pag {
+  color: white;
+}
+
+.metodo {
+  color: white;
+}
+
+.obrigado {
+  color: white;
+}
+
+  .itname {
+    color: white;
   }
   
   .hidden {

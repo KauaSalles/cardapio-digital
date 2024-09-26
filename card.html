@@ -10,10 +10,15 @@
   <header class="header-box">
     <h1 class="name">Hamburgueria Salles</h1>  
   </header>
-  <button class="input-box" id="cartButton">🛒 Carrinho (<span id="cartCount">0</span>)</button>
+  <button class="input-box" id="cartButton">🛒 (<span id="cartCount">0</span>)</button>
   <a href="https://www.instagram.com/salleskaua_/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
   </a>
+
+  <a href="https://www.canva.com/design/DAGR4w2dF1o/MtmVAue0U6mqSMVZGElyAQ/edit" target="_blank">
+    <img class="canva" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywFgeyW31Sz3FCPGTekNaDW0Lh9UxH1bVRbkucqwjCxKaxRFmqHxMuU85jGNF1dwvq4s&usqp=CAU" alt="Canva">
+  </a>
+  
   
   <section id="menu">
     <h2>Lanches</h2>
@@ -72,15 +77,15 @@
 
   <div id="cartModal" class="hidden">
     <h2>Carrinho</h2>
-    <ul id="cartItems"></ul>
+    <ul class="itname" id="cartItems"></ul>
     <button id="checkoutButton">Finalizar Compra</button>
     <button id="closeCart">Fechar</button>
   </div>
 
   <div id="checkoutPage" class="hidden">
     <h2>Pagamento</h2>
-    <ul id="checkoutItems"></ul>
-    <label for="paymentMethod">Método de Pagamento:</label>
+    <ul class="pag" id="checkoutItems"></ul>
+    <label class="metodo" for="paymentMethod">Método de Pagamento:</label>
     <select id="paymentMethod">
       <option value="credit">Cartão de Crédito</option>
       <option value="debit">Cartão de Débito</option>
@@ -91,7 +96,7 @@
 
   <div id="purchaseAnimation" class="hidden">
     <h2>Compra Finalizada!</h2>
-    <p>Obrigado pela compra!</p>
+    <p class="obrigado" >Obrigado pela compra!</p>
   </div>
 
   <footer class="footer"><p>

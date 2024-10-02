@@ -63,5 +63,32 @@ function finalizePurchase() {
     document.getElementById('purchaseAnimation').classList.add('hidden');
     cart = [];
     updateCartCount();
-  }, 3000); // Mostra a animação por 3 segundos
+  }, 3000); 
 }
+
+
+document.getElementById('checkoutButton').addEventListener('click', proceedToCheckout);
+
+function proceedToCheckout() {
+ 
+  sessionStorage.setItem('cart', JSON.stringify(cart));
+
+  
+  window.location.href = 'pag.html';
+}
+
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', addToCart);
+});
+
+function addToCart(event) {
+  const item = event.target.parentElement;
+  const itemName = item.getAttribute('data-name');
+  const itemPrice = item.getAttribute('data-price');
+  const itemImage = item.querySelector('img').src; 
+
+  cart.push({ name: itemName, price: itemPrice, image: itemImage });
+  updateCartCount();
+}
+

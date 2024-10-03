@@ -119,7 +119,6 @@ function displayCheckoutItems() {
       total += parseFloat(item.price);
     });
   
-    // Exibe o valor total
     displayTotal(total);
   }
   
@@ -137,4 +136,31 @@ function displayCheckoutItems() {
     displayCheckoutItems();
     updateCartCount(); 
   }
+
+document.getElementById('cardNumber').addEventListener('input', function (e) {
+  let cardNumber = e.target.value.replace(/\D/g, ''); 
+  cardNumber = cardNumber.slice(0, 16); 
+
+  e.target.value = cardNumber.replace(/(.{4})/g, '$1 ').trim(); 
+});
+
+
+document.getElementById('cardExpiry').addEventListener('input', function (e) {
+  let expiry = e.target.value.replace(/\D/g, ''); 
+  if (expiry.length >= 2) {
+    expiry = expiry.slice(0, 2) + '/' + expiry.slice(2, 4); 
+  }
+  e.target.value = expiry.slice(0, 5); 
+});
+
+document.getElementById('cardCVC').addEventListener('input', function (e) {
+  let cvv = e.target.value.replace(/\D/g, ''); 
+  e.target.value = cvv.slice(0, 3);
+
+  
+});
+
+
+  
+  
   

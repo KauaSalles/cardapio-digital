@@ -90,5 +90,7 @@ function addToCart(event) {
 
   cart.push({ name: itemName, price: itemPrice, image: itemImage });
   updateCartCount();
+
+  
 }
 

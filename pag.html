@@ -27,15 +27,15 @@
   
       <div id="cardFields" class="hidden">
         <label for="cardNumber">Número do Cartão:</label>
-        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
-        
-        <label for="cardExpiry">Validade:</label>
-        <input type="text" id="cardExpiry" placeholder="MM/AA">
-        
+        <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">  
+      
+        <label for="cardExpiry">Validade (MM/AA):</label>
+        <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5"> 
+      
         <label for="cardCVC">CVV:</label>
-        <input type="text" id="cardCVC" placeholder="123">
-      </div>
-    </div>
+        <input type="text" id="cardCVC" placeholder="123" maxlength="3"> 
+      </div> 
+      
 
     <div id="totalAmount" style="margin-top: 20px; font-size: 35px; color: white; font-weight: bold;"></div>
   </div>
